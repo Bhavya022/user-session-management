@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Details</title>
+  </head>
+  <body>
+    <h1>User Details</h1>
+    <p>Mobile: <%= user.mobile %></p>
+    <p>Username: <%= user.username %></p>
+    <p>Active Session: <%= user.activeSession %></p>
+
+    <h2>Sessions:</h2>
+    <ul>
+      <% user.sessions.forEach(function(session) { %>
+        <li>
+          <strong>Session Key:</strong> <%= session.sessionKey %><br>
+          <strong>User Agent:</strong> <%= session.userAgent %><br>
+          <strong>IP Address:</strong> <%= session.ipAddress %><br>
+          <strong>Created At:</strong> <%= session.createdAt.toLocaleString() %><br>
+          <strong>Valid:</strong> <%= session.isValid ? 'Yes' : 'No' %>
+        </li>
+      <% }); %>
+    </ul>
+  </body>
+</html>

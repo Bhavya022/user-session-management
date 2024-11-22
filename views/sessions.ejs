@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Sessions</title>
+</head>
+<body>
+  <h1>User Details</h1>
+  <p>Mobile: <%= user.mobile %></p>
+  <p>Active Session: <%= user.activeSession %></p>
+  <h2>All Sessions:</h2>
+  <ul>
+    <% user.sessions.forEach(session => { %>
+      <li>Session ID: <%= session.sessionId %></li>
+    <% }) %>
+  </ul>
+</body>
+</html>
