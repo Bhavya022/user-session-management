@@ -117,7 +117,9 @@ Copy code
       }
     ]
   }
-}
+} 
+### Logon
+![Login](screenshots/Screenshot%20(62).png) 
 4. Invalidate Session
 URL: /invalidateSession
 Method: POST
@@ -154,6 +156,8 @@ Copy code
     ]
   }
 }
+### Invalidate session
+![invalidate session](screenshots/Screenshot%20(63).png) 
 Requirements
 Node.js: >= 14.x
 Express.js: ^4.17.1
