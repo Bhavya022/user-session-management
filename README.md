@@ -165,18 +165,15 @@ MongoDB: Database for storing user data and session information.
 Installation
 Clone the repository.
 
-bash
-Copy code
+
 git clone <repository_url>
 Install dependencies:
 
-bash
-Copy code
+
 npm install
 Start the server:
 
-bash
-Copy code
+
 npm start
 The server will be running on http://localhost:3000.
 
